@@ -1,7 +1,13 @@
+.post-content {
+  h2 {
+    margin-top: $spacing-unit;
+  }
+}
+
 .social-media-list li a {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: $spacing-unit / 7.5;
   * {
       display: block;
   }
