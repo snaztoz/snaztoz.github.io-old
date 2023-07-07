@@ -2,6 +2,7 @@
 layout: post
 title:  "OOP: Apa Itu Object-Oriented Programming?"
 date:   2023-07-07 09:57:00 +0700
+author: snaztoz
 categories: programming
 tags: oop python
 ---
