@@ -1,3 +1,24 @@
+.post-list {
+  li h3 {
+    margin-bottom: $spacing-unit / 4;
+  }
+}
+
+.post-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $spacing-unit / 3.75;
+
+  p {
+    margin: 0;
+    padding: 0 ($spacing-unit / 3.75);
+    border-radius: $spacing-unit / 1.875;
+    vertical-align: baseline;
+    background-color: #e0ebfa;
+    color: $brand-color;
+  }
+}
+
 .post-content {
   h2 {
     margin-top: $spacing-unit;

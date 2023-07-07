@@ -1,0 +1,7 @@
+{%- if include.post.tags.size > 0 -%}
+  <div class="post-tags">
+    {%- for tag in include.post.tags -%}
+      <p>#{{ tag | escape }}</p>
+    {%- endfor -%}
+  </div>
+{%- endif -%}
