@@ -28,8 +28,9 @@ url: https://snaztoz.github.io # the base hostname & protocol for your site, e.g
 github_username:  snaztoz
 
 # Build settings
-theme: minima
+remote_theme: jekyll/minima@2.5-stable
 plugins:
+  - jekyll-remote-theme
   - jekyll-feed
 
 show_excerpts: true
