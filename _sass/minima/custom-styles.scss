@@ -1,3 +1,11 @@
+body {
+  font-size: $base-font-size * 1.125;
+}
+
+.site-header {
+  border-top: none;
+}
+
 .post-list {
   li h3 {
     margin-bottom: $spacing-unit / 4;
@@ -20,6 +28,10 @@
 }
 
 .post-content {
+  & > * {
+    margin-bottom: $spacing-unit / 1.5;
+  }
+
   h2 {
     margin-top: $spacing-unit;
   }
@@ -31,6 +43,15 @@
   h4 {
     margin-top: $spacing-unit / 1.5;
   }
+
+  #markdown-toc {
+    margin-bottom: $spacing-unit;
+
+    li {
+      margin-bottom: $spacing-unit / 7.5;
+      padding-left: $spacing-unit / 7.5;
+    }
+  }
 }
 
 .social-media-list li a {
@@ -39,5 +60,15 @@
   gap: $spacing-unit / 7.5;
   * {
       display: block;
+  }
+}
+
+@include media-query($on-palm) {
+  body {
+    font-size: $base-font-size;
+  }
+
+  .post-content > * {
+    margin-bottom: $spacing-unit / 1.825;
   }
 }
