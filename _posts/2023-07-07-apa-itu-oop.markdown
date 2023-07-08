@@ -19,15 +19,15 @@ Jika kita mengunjungi situs Wikipedia untuk membaca informasi tentang beberapa b
 
 Bahkan bahasa pemrograman yang kini tengah naik daun beberapa tahun belakangan ini, Golang, juga memiliki sentuhan *object-oriented* di dalamnya.
 
-Jadi mengapa *object-oriented programming* (atau OOP) ini bisa sangat banyak digunakan oleh bahasa-bahasa pemrograman populer di dunia?
+Jadi mengapa *object-oriented programming* (atau OOP) bisa sangat banyak digunakan oleh bahasa-bahasa pemrograman populer di dunia?
 
 Kita akan membahasnya satu-persatu, dimulai dari yang paling awal dulu:
 
 ## Pengertian Object
 
-*Object* (seperti namanya), adalah inti utama dari paradigma ini. Oleh karenanya penting untuk kita bisa memahami konsep ini.
+*Object* (seperti namanya), adalah inti utama dari paradigma OOP. Oleh karenanya penting untuk kita bisa memahami konsep ini.
 
-Definisi mudah untuk menjelaskan apa itu *object* ialah:
+Definisi mudah untuk menggambarkan apa itu *object* ialah:
 * Sesuatu hal yang memiliki nilai/sifat tertentu; dan
 * Sesuatu hal yang memiliki kemampuan tertentu
 
@@ -39,30 +39,30 @@ Maka kita dapat mengatakan bahwa mobil tersebut adalah sebuah *object*!
 
 Contoh lain, bayangkan terdapat seekor kucing yang memiliki bulu lebat (sebuah nilai), dan kucing tersebut dapat meloncat tinggi ke atas pagar (sebuah kemampuan). Maka kucing tersebut juga dapat kita katakan sebagai sebuah *object*.
 
-Konsep ini identikal penggunaannya di banyak bahasa-bahasa pemrograman.
+Konsep ini cukup universal di banyak bahasa pemrograman.
 
-Di dunia pemrograman, nilai/sifat dari sebuah *object* seringkali disebut sebagai **property**, sedangkan kemampuan yang dapat dilakukan *object* seringkali disebut sebagai **method**.
+Di dunia pemrograman sendiri, nilai/sifat dari sebuah *object* seringkali disebut sebagai **property**, sedangkan kemampuan yang dapat dilakukan *object* seringkali disebut sebagai **method**.
 
 ## Pengertian Class
 
-Di sisi lain, banyak di antara bahasa pemrograman yang berparadigma *object-oriented* juga memiliki konsep lain yang bernama *class*. Nah, apa itu *class*?
+Di sisi lain, banyak bahasa pemrograman yang berparadigma *object-oriented* juga memiliki konsep lain yang bernama *class*. Nah, apa itu *class*?
 
 Mudahnya, *class* adalah sebuah cetakan untuk membuat *object*.
 
 Katakanlah terdapat sebuah mobil sedan sebagai *object*, maka kita dapat menganalogikan *class* sebagai [blueprint](https://en.wikipedia.org/wiki/Blueprint) dari mobil sedan tersebut.
 
-Dengan adanya sebuah *blueprint*, maka pekerja di pabrik-pabrik mobil sedan akan dapat mengetahui cara untuk bisa membuat mobil sedan, berapapun jumlah yang diinginkannya, sesuai dengan spesifikasi yang ada.
+Dengan adanya sebuah *blueprint*, maka pekerja di pabrik-pabrik mobil sedan akan dapat mengetahui cara untuk bisa membuat mobil sedan tersebut, berapapun jumlah yang diinginkannya, sesuai dengan spesifikasi yang ada.
 
 Di bahasa Python, kita dapat menerapkan konsep ini seperti berikut:
 
 {% highlight python %}
 # Membuat class (blueprint sedan)
 class Sedan:
-  # Abaikan saja dulu bagian ini jika belum terlalu familiar
-  # dengan penggunaan class di Python sebelumnya
   def __init__(self, warna):
+    # nilai (property)
     self.warna = warna
 
+  # kemampuan (method)
   def melaju(arah):
     if arah == 'depan':
       print('Mobil sedan melaju ke depan')
@@ -84,11 +84,9 @@ sedan_kedua.melaju('depan')
 # dst...
 {% endhighlight %}
 
-Di bahasa lain seperti Java ataupun Ruby, cara kerja dari *class* dan *object* ini kurang lebih serupa.
+Di sebagian bahasa, seperti Java ataupun Ruby, cara kerja dari *class* dan *object* kurang lebih serupa. Namun, di sebagian bahasa lainnya konsep ini belum tentu sama 100%.
 
-Meskipun demikian, di beberapa bahasa lain hal ini belum tentu 100% sama.
-
-Sebagai contoh, meskipun *object* pada Golang (seringkali) juga memiliki *property* dan juga *method*, namun pada bahasa ini tidak ada yang namanya *class*!
+Sebagai contoh, meskipun *object* pada Golang juga bisa memiliki *property* dan juga *method*, namun pada bahasa ini tidak ada yang namanya *class*!
 
 Sebagai gantinya, bahasa Golang menggunakan konsep lain yang bernama **struct**. *Struct* ini kurang lebih serupa dengan *class*, namun di beberapa sisi mereka memiliki beberapa perbedaan yang cukup signifikan. Akan terlalu panjang jika perbedaan tersebut kita bahas di postingan ini, jadi mari kita kesampingkan dulu hal ini.
 
@@ -96,11 +94,11 @@ Sebagai gantinya, bahasa Golang menggunakan konsep lain yang bernama **struct**.
 
 Setelah memahami konsep dari *object* dan *class*, kita sudah bisa memperoleh definisi dari *object-oriented programming* itu sendiri.
 
-Mudahnya, *object-oriented programming* atau OOP adalah sebuah paradigma pemrograman yang memusatkan pada penggunaan satu atau lebih *object* untuk merangkai sebuah sistem *software*.
+Mudahnya, *object-oriented programming* atau OOP adalah sebuah **paradigma pemrograman yang memusatkan pada penggunaan satu atau lebih *object*** untuk merangkai sebuah sistem *software*.
 
 *Object-object* tersebut kemudian dapat berinteraksi satu sama lain sehingga dapat menyusun sebuah sistem yang utuh.
 
-Sebagai contoh, bayangkan pada sebuah *software* yang menyusun website terdapat:
+Sebagai contoh, bayangkan pada suatu sistem *software* yang menyusun sebuah website akan terdapat:
 * *object* untuk mengambil data dari database
 * *object* untuk mengolah data tersebut
 * *object* untuk menampilkan data
