@@ -9,11 +9,21 @@ tags: oop python
 
 Paradigma *object-oriented programming* atau yang biasa disingkat menjadi OOP adalah sebuah paradigma yang populer digunakan di banyak bahasa pemrograman. Namun, apakah sebenarnya OOP itu?
 
+### Daftar Isi
+{:.no_toc}
+
+1. TOC
+{:toc}
+
 Jika kita mengunjungi situs Wikipedia untuk membaca informasi tentang beberapa bahasa pemrograman yang paling banyak digunakan saat ini, tidak jarang kita akan menemukan kalimat seperti berikut:
 
 > Java is a high-level, class-based, **object-oriented** programming language... [Java (programming language) - Wikipedia](https://en.wikipedia.org/wiki/Java_(programming_language))
 
+atau:
+
 > Python is ... . It supports multiple programming paradigms, including ..., **object-oriented** and ... [Python (programming language) - Wikipedia](https://en.wikipedia.org/wiki/Python_(programming_language))
+
+atau mungkin juga:
 
 > Ruby is ... .  It supports multiple programming paradigms, including ..., **object-oriented**, and ... [Ruby (programming language) - Wikipedia](https://en.wikipedia.org/wiki/Ruby_(programming_language))
 
