@@ -12,25 +12,23 @@ body {
   }
 }
 
-.post-header {
-  .breadcrumbs {
-    margin-bottom: $spacing-unit;
-    font-size: $base-font-size;
-  }
+.post-header .breadcrumbs {
+  margin-bottom: $spacing-unit;
+  font-size: $base-font-size;
+}
 
-  .post-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: $spacing-unit / 3.75;
+.post-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $spacing-unit / 3.75;
 
-    p {
-      margin: 0;
-      padding: 0 ($spacing-unit / 3.75);
-      border-radius: $spacing-unit / 1.875;
-      vertical-align: baseline;
-      background-color: #e0ebfa;
-      color: $brand-color;
-    }
+  p {
+    margin: 0;
+    padding: 0 ($spacing-unit / 3.75);
+    border-radius: $spacing-unit / 1.875;
+    vertical-align: baseline;
+    background-color: #e0ebfa;
+    color: $brand-color;
   }
 }
 
