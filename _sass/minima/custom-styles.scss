@@ -1,7 +1,3 @@
-body {
-  font-size: $base-font-size * 1.125;
-}
-
 .site-header {
   border-top: none;
 }
@@ -14,7 +10,6 @@ body {
 
 .post-header .breadcrumbs {
   margin-bottom: $spacing-unit;
-  font-size: $base-font-size;
 }
 
 .post-tags {
@@ -69,10 +64,6 @@ body {
 }
 
 @include media-query($on-palm) {
-  body {
-    font-size: $base-font-size;
-  }
-
   .post-content > * {
     margin-bottom: $spacing-unit / 1.825;
   }
