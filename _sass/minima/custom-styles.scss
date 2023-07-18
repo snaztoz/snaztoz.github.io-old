@@ -9,8 +9,14 @@
   }
 }
 
-.post-header .breadcrumbs {
-  margin-bottom: $spacing-unit;
+.post-header {
+  .breadcrumbs {
+    margin-bottom: $spacing-unit;
+  }
+
+  .post-title {
+    line-height: $spacing-unit / 0.5;
+  }
 }
 
 .post-tags {
@@ -49,7 +55,7 @@
     margin-bottom: $spacing-unit;
 
     li {
-      margin-bottom: $spacing-unit / 7.5;
+      margin-top: $spacing-unit / 7.5;
       padding-left: $spacing-unit / 7.5;
     }
   }
