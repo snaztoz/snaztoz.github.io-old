@@ -4,7 +4,8 @@
 
 .post-list {
   li h3 {
-    margin-bottom: $spacing-unit / 4;
+    margin: ($spacing-unit / 4) 0px;
+    line-height: $spacing-unit;
   }
 }
 
